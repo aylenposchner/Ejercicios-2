@@ -1,0 +1,11 @@
+<h1>Producto</h1>
+<h3>Lista de Categorias</h2>
+
+<ul>
+{% for categoria in categorias %}
+    <li> {{categoria}}</li>
+    
+{% endfor %}
+</ul>
+
+<a href="{% url 'producto:index' %}">Volver a Productos</a>

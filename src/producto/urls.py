@@ -5,4 +5,5 @@ app_name = "producto"
 
 urlpatterns = [
     path("",views.index, name="index"),
+    path("categoria/list/",views.Categoria_list, name="categoria_list")
 ]
