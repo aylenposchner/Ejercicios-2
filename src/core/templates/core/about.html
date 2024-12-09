@@ -1,4 +1,11 @@
+{% load static %}
+
 <h1> Acerca de mi</h1>
 <p>Me llamo...</p>
 <p>Linkedin: </p>
+
+<img src="{% static 'core/img/logo.png' %}"alt="" height="15%">
+
+<br/>
+<br/>
 <a href="{% url 'core:index' %}">Volver al inicio</a>
