@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APP Core</title>
-</head>
-<body>
-    <h1>INICIO</h1>
-    <a href="{% url 'producto:index' %}">Ir a Productos</a>
-    <br/>
-    <a href="{% url 'core:about' %}">Acerca de mi</a>
-    
-</body>
-</html>
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1>INICIO</h1>
+<a href="{% url 'producto:index' %}">Ir a Productos</a>
+<br/>
+<a href="{% url 'core:about' %}">Acerca de mi</a>
+{% endblock content %}
